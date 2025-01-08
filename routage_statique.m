@@ -1,6 +1,6 @@
 function [chemins] = routage_statique(mat_etats_liens,appel)
-%ROUTAGE_STATIQUE Effectue le routage statique d'un réseau téléphonique
-chemins=zeros(6);
+%ROUTAGE_STATIQUE Réalise le routage statique d'un réseau téléphonique
+chemins=zeros(5);
     % Appel de 1 vers 2
     if(appel(1)==1 && appel(2)==2)
         if (mat_etats_liens(1,4)>0 && mat_etats_liens(4,2))
