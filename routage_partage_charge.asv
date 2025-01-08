@@ -1,0 +1,7 @@
+function [chemin] = routage_partage_charge(mat_etats_liens,appel)
+%ROUTAGE_PARTAGE_CHARGE Réalise le routage par partage de charge d'un
+% Réseau téléphonique
+mat_probas=[];
+appel(1)=
+end
+

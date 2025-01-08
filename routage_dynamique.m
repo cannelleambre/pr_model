@@ -6,7 +6,7 @@ source=appel(1);
 dest=appel(2);
 
 % Algorithme de Dijkstra
-[e L] = dijkstra(mat_etats_liens,source,dest);
+[~,L] = dijkstra(mat_etats_liens,source,dest);
 
 % Création de la matrice des chemins
 for i=1:length(L)-1
