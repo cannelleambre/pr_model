@@ -13,7 +13,9 @@ dest=appel(2);
 
 % Création de la matrice des chemins
 for i=1:length(L)-1
-    chemins(L(i),L(i+1))=1;
+    if (mat_etats_liens(L(i),L(i+1))>0)
+        chemins(L(i),L(i+1))=1; 
+    end
 end
 
 end
