@@ -1,7 +1,8 @@
 function [chemins] = routage_dynamique(mat_etats_liens,appel)
 %UNTITLED Réalise le routage dynamique d'un réseau téléphonique
 chemins=zeros(5);
-mat_etats_liens2=1000-mat_etats_liens;
+mat_etats_liens2=1001-mat_etats_liens;
+mat_etats_liens2(mat_etats_liens2==1001) = 0;
 source=appel(1);
 dest=appel(2);
 
